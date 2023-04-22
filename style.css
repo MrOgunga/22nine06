@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&family=Raleway:wght@200;300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Raleway", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-image: url(Images/first.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAV BAR */
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* NAV BAR */
+
+/* text box */
+.text-box {
+  width: 70%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: black;
+  padding: 3%;
+  box-shadow: 0 4px 8px 4px rgba(255, 94, 0, 0.19);
+  border-radius: 50px;
+  opacity: 90%;
+}
+
+.text-box h1 {
+  font-size: 62px;
+  transition: 0.5s;
+}
+#design {
+  color: orange;
+}
+.text-box h1:hover {
+  font-weight: 600;
+  transition: 1s;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-btn1 {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid orange;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+  background-color: orange;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+.hero-btn1:hover{
+    background-color: rgb(255, 191, 31);
+    transition: 1s;
+    color:black;
+}
+.hero-btn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid orange;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 10px;
+margin: 0px 10px;
+}
+
+.hero-btn2:hover{
+    background-color: rgb(255, 191, 31);
+    transition: 1s;
+    color: black;
+}
+/* text box */
